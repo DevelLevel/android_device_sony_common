@@ -17,7 +17,7 @@ TARGET_VENDOR_VERSION := 6
 
 # Common path
 COMMON_PATH := device/sony/common
-
+$(call inherit-product, vendor/aosp/common.mk)
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
 # Common Specific Permissions
